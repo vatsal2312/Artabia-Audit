@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity =0.8.9;
 
-import "@openzeppelin/contracts/utils/introspection/ERC165Checker.sol";
-import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
-import "@openzeppelin/contracts/interfaces/IERC2981.sol";
-import "@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol";
+import "../ERC165Checker.sol";
+import "../IERC721.sol";
+import "../IERC2981.sol";
+import "../ERC721Holder.sol";
 import "../utils/OnlyNonContractsOrApproved.sol";
 
-import "hardhat/console.sol";
+import "../console.sol";
 
 /**
  * @notice Seller marketplace for ERC721 tokens.
