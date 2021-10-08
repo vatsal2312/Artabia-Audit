@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity =0.8.9;
 
-import "globally-approved-operators-tokens/contracts/GloballyApprovedOperatorsERC1155.sol";
+import "../GloballyApprovedOperatorsERC1155.sol";
 import "../ERC1155Marketplace/ERC1155OrderMarketplace.sol";
 import "../ERC1155Marketplace/ERC1155ListingMarketplace.sol";
 import "../ERC1155Marketplace/ERC1155AuctionMarketplace.sol";
-import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/interfaces/IERC2981.sol";
+import "../Address.sol";
+import "../IERC2981.sol";
 
 contract ArtabiaERC1155 is GloballyApprovedOperatorsERC1155, IERC2981 {
   using Address for address;
