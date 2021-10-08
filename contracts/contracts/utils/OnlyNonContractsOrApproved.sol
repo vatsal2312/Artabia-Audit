@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity =0.8.9;
 
-import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "../Address.sol";
+import "../Ownable.sol";
 
 /**
  * @dev Auxiliary contract that exposes a onlyNonContractsOrApproved
