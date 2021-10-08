@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity =0.8.9;
 
-import "globally-approved-operators-tokens/contracts/GloballyApprovedOperatorsERC721.sol";
+import "../GloballyApprovedOperatorsERC721.sol";
 import "../ERC721Marketplace/ERC721OrderMarketplace.sol";
 import "../ERC721Marketplace/ERC721ListingMarketplace.sol";
 import "../ERC721Marketplace/ERC721AuctionMarketplace.sol";
-import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/utils/Strings.sol";
-import "@openzeppelin/contracts/interfaces/IERC2981.sol";
+import "../Address.sol";
+import "../Strings.sol";
+import "../IERC2981.sol";
 
 contract ArtabiaERC721 is GloballyApprovedOperatorsERC721, IERC2981 {
   using Strings for uint256;
